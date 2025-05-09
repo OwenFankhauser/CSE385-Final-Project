@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Burger, M.H.</origin>
+        <origin>Schmeda, G</origin>
+        <origin>Long, K.R.</origin>
+        <origin>Reyes, T.A.</origin>
+        <origin>Karl, N.A.</origin>
+        <pubdate>20180730</pubdate>
+        <title>Cobalt Deposits in the United States</title>
+        <geoform>Vector Digital Data Set</geoform>
+        <pubinfo>
+          <pubplace>Denver, CO</pubplace>
+          <publish>USGS ScienceBase</publish>
+        </pubinfo>
+        <onlink>https://doi.org/10.5066/P9V74HIU</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This data release provides descriptions of more than 60 mineral regions, mines, and mineral deposits within the United States and its territories that are reported to contain enrichments of cobalt (Co). To focus the scope of this data release, we report only mined deposits and exploration prospects with past production, or resource and reserve estimates of 1,000 metric tons or more of cobalt. 
+
+Cobalt has diverse uses because of its properties, which include ferromagnetism, hardness, wear-resistance, low conductivity, and high melting point. The primary uses for cobalt are in rechargeable battery electrodes, and in superalloys used to make gas turbine engines. In 2017, the United States had a net import reliance as a percentage of apparent consumption of 72 percent for cobalt, and cobalt is considered a critical mineral. 
+
+Cobalt mineralogy is diverse; it occurs in a variety of sulfide, arsenide, sulfarsenide, and oxyhydroxide minerals. In the United States, cobalt could be derived as a byproduct from mineral deposits that primarily produce other metals, including nickel, copper, zinc, and lead. 
+
+The inclusion of a particular mineral deposit or prospect in this database is not meant to imply that it has economic potential. Rather, these entries were included to capture the characteristics of the deposits and prospects in the United States and its territories that have the largest cobalt resources. These deposits and prospects occur in Alaska, California, Idaho, Maine, Michigan, Minnesota, Missouri, Montana, North Carolina, New Mexico, Oregon, Pennsylvania, Puerto Rico and Tennessee. 
+
+Several deposits and prospects were not included in this database, because they contain less than 1,000 metric tons of cobalt. A prime example is the Bunkerville project in Nevada (Ludington and others, 2006).  
+
+The Stillwater deposit in Montana produced cobalt, but this was a byproduct, and to our knowledge, there are no published records of the amount of cobalt produced, or the amount of cobalt contained within the deposit. Analyses of rock chips from 47 outcrops of the Katahdin deposit in Maine indicates that the deposit locally contains approximately 0.1 percent cobalt (Miller, 1945), but a thorough analysis of the deposit is lacking.  
+
+Mine La Motte in Missouri and the Stone Corral project in California were not included because of a lack of ore reserve information in publicly available references. However, we are aware that cobalt is present in the area and we welcome further information on these sites.
+
+The entries and descriptions in the database were derived from published papers, reports, data, and internet documents, published from 1908 to 2018, representing a variety of sources, including geologic and exploration studies described in State, Federal, and industry reports. Although an attempt was made to capture as many examples as possible, this dataset is a progress report that is part of an ongoing effort. The authors welcome additional published information in order to continually update and refine this dataset.</abstract>
+      <purpose>This dataset is part of an ongoing effort by the U.S. Geological Survey (USGS) to understand the attributes and geologic distribution of critical mineral resources, both globally, and in particular, in the United States. The United States continues to become more dependent on imports to meet the domestic demands for an increasing number of mineral commodities. Many mineral commodities are now produced primarily or entirely outside of the United States, creating the potential for supply interruptions in the foreseeable future, or in the long term. These important but highly dependent mineral commodities are deemed critical and (or) strategic resources. 
+
+Cobalt represents a prime example of a critical mineral resource. Cobalt is primarily used in cathodes for rechargeable batteries and in superalloys for jet turbine engines. Most cobalt is mined as a byproduct of copper or nickel, and recently cobalt prices have increased due to strong demand and limited availability. In some cases, there are possible substitutions for cobalt, however, in many applications, substitution would result in loss of performance.
+
+This dataset was compiled to provide base layers of information that identify and describe the known cobalt occurrences in the United States and its territories. This compilation is intended to contribute to our geologic understanding of cobalt deposits in the United States, and to assist in evaluating their resource potential.
+
+Ludington, S., Haxel, G.B., Castor, S.B., McLaurin, B.T., and Flynn, K.S., 2006, Mineral Resource Assessment of Selected Areas in Clark and Nye Counties, Nevada: U.S. Geological Survey Scientific Investigations Report 2006-5197- C, 55 p.
+
+Miller, Ralph LeRoy, 1945, Geology of the Katahdin pyrrhotite deposit and vicinity, Piscataquis County, Maine: Maine Geological Survey (Maine Development Commission), Bulletin 2, 21 p., illus. incl. index, geologic maps. Maine Geological Survey Publications., accessed May 16, 2018, at http://digitalmaine.com/mgs_publications/3</purpose>
+      <supplinf>The Esri ArcGIS 10.5 geodatabase contains 1 point and 2 polygon feature classes, 8 attribute tables, and 15 relationship classes. Relationship classes link tables using the Ftr_ID or Site_ID fields. Feature classes are also provided as Esri shapefiles; attribute tables are provided as Excel and comma-separated values (CSV) files. The description of each database layer (feature class) and attribute table is provided below, followed by general information about concepts and terms used in the development of the database.
+
+DATABASE LAYERS AND TABLES
+
+The Loc_Pt feature class contains point locations of mines, mineral occurrences (which includes deposits and prospects), and mineral regions, and the attribute information describing the location, source report, scale of the map used to obtain the location, and if the location has a polygonal footprint in the Loc_Poly feature class. In the database, all features have a point location, except for surface workings. In this database, all mineral regions are mining districts.
+
+The Loc_Poly feature class contains footprints or polygons of deposits, mining districts, and prospects. If a source report shows a location as a polygon, the polygon is digitized and the approximate centroid of the polygon is added to the Loc_Pt layer. Attribute information about the location is provided in the Loc_Pt layer. Mines are represented as points in the database, even when footprints are presented in source reports. Where possible, the approximate extent of the mining operation area, determined from imagery, is presented in the surface workings layer (see Loc_Poly_Sw).
+
+The Loc_Poly_Sw feature class contains the approximate area of mining-related activity, or “surface workings” as shown on Esri imagery. These polygonal outlines have no corresponding point location in the database, nor do they have links to other tables. The attribute information for surface workings contains the date of the imagery and basic location information including state and county names. Surface workings must be at least 1,000 feet (300 meters) in one dimension to be digitized, and multiple workings that are 500 feet (150 meters) or less apart are combined into one outline. No attempt is made to distinguish between the types of surface workings (for example, roads, pits, leach pads, waste piles, etc.), even when presented in source reports.
+
+The Site table is used to identify related features, such as a deposit and the mine(s) operating on it, or a mine and its related deposits. Each site has a unique identification value in the Site_ID field. The Site_ID is used in all tables except the References table. The Site table also indicates where information about a site occurs within the database. For example, if the Resources field in the Site table contains the value “Yes”, resource information is available in the Resources table.
+
+The GeolMinOcc table contains information about the geology of mineral deposits and prospects. Every attempt was made to compile information as reported in the source report. For example, if one source report states the valuable material as “chalcopyrite”, and another reports "cobaltite and bornite", the attribute field Value_Mat will contain all values. The value in the Ref_ID field is the primary source report for the record, for example, Foo and others (2017). All information in the record comes from the primary source report unless an attribute field value contains a footnote denoted as a number in parentheses. If a record value is followed by a footnote, the Ref_ID is given in the Remarks field. Full citations for source reports are provided in the References table.
+
+The Resources table contains reported resource and reserve information for mineral deposits. Initial (or earliest resource data found by authors) and current resource data were compiled, even if information from intervening years was reported. Resource values were recorded as shown in source reports, including year reported, resource amount, units, and classification system(s). The definition of terms (for example, inferred, proven, probable, etc.) used in various resource classification systems may change through time. If resources or reserves are reported for a group of features rather than an individual deposit, the Ftr_ID will show “-1111” and the resource or reserve is assigned to the “site” or Site_ID that groups those deposits in the Site table. A value ending with “111” as a decimal trailer indicates the value was calculated by USGS authors. For example, if a grade is calculated by USGS authors to be 0.05 percent, the value recorded in the database will be 0.05111. For consistency, resource values are converted to the International System of Units (SI units) by the USGS authors.  
+
+The Production table contains published production data for mines. Production is listed by commodity and reported as shown in the source reports. If production is reported annually, production is totaled by the USGS authors for the time period defined by the Year_From and Year_To values. If production is reported for a group of features, the Ftr_ID will show “-1111” and the production is assigned to the “site” or Site_ID that groups those mines in the Site table. A value ending with “111” as a decimal trailer indicates the value was calculated by USGS authors. For example, if a grade is calculated by USGS authors to be 0.05 percent, the value recorded in the database will be 0.05111. For consistency, production values are converted to the International System of Units (SI units) by the USGS authors.
+
+The History table contains information derived from publicly available sources regarding the status of a mine, prospect, deposit, or mineral region through time. Values in the Status field indicate a condition or phase for the time period stated in the Year_From and Year_To fields. This information may not reflect the current status of a feature. For example, if the attribute record shows the status of a mine is “Active” and the Year_From and Year_To dates are 1920 and 1992 respectively, the mine was active from 1920 to 1992; it is unknown if the mine is still active. The Last_Updt field shows the date that the record was last updated by the authors.
+
+The Dep_Model table contains mineral deposit model and geoenvironmental model classifications for a deposit. If a deposit model classification could not be determined from published sources, the deposit model was assigned based on available geologic information and denoted as “USGS Authors (2018)” in the DpMd_RefID field.
+
+The Descr_Sum table contains relevant descriptions found in source reports. These descriptions are attributed according to the type of description, such as Geology, Resource, Production, History, etc. Descriptions pertain to individual features or to larger sites. The authors do not paraphrase or combine descriptions, and therefore, when a database feature is described in multiple reports, the feature will have multiple entries.
+
+The References table contains the citation of the map or report(s) from which the point, polygon, or attribute information was obtained. The table also assigns a short reference Ref_ID that is used throughout the database.
+
+GENERAL INFORMATION
+
+Mines are a man-made feature associated with the process of extracting, processing, or concentrating ore materials. In this database, mines have a point location, and where possible, the polygon boundary showing the extent of surface workings identified from imagery. No attempt is made to distinguish specific mine features like pits, dumps, tailings, etc. within the surface workings outline.
+
+Mineral occurrences, defined as a concentration of a mineral considered potentially valuable, are attributed as deposits and prospects in the database. Mineral deposits have defined size and grade indicated by current and (or) past production, and (or) a resource estimate. Prospects have sufficient data to describe at least two dimensions and the presence of useful or valuable minerals or materials. Mineral showings, or the occurrence of potentially valuable minerals as indicated by geological examination or analyses of samples, are not included in the database.
+
+Mining districts represent historic administrative areas organized by miners under the mining laws of the United States. Mining districts are typically an area containing a group of mines that exploited the same or related commodity. Mining district polygons may overlap.
+
+The locations of mines, mineral occurrences, and mineral regions are commonly represented as points in source maps and reports, and occasionally as footprints (polygon outlines). In this database, all features have a point location, and some have an additional polygonal footprint. Surface workings in the Loc_Poly_Sw feature class are the exception—they do not have a corresponding point location or attribute information in the point layer. Otherwise, for points that have polygonal boundaries, the point attribute field Loc_Poly contains the value “Yes” and type of boundary is described in the field Poly_Def (for example, “Outline of ore”, “Block model of 0.01 to 0.5 percent copper”, or “Boundary of mining district”).
+
+Each point and polygon feature is uniquely identified by a Ftr_ID. The Site_ID is used to indicate groups of related features, or “sites”. Tables are linked (related) using the Ftr_ID or the Site_ID fields. Some tables have more than one record describing a feature. For example, a point denoting a mine location may have many records in the Production table summarizing the dates and amounts of material produced. The database is designed to allow the user to navigate from the point or polygon layers to the linked table information or from the tables to the point and polygon layers.
+
+All database information is derived from publicly available sources. The Last_Updt field shows the date that the record information was last updated by the authors. Full citations are listed in the References table, and each citation is assigned a short citation used as an identification (ID) in the database. In each feature class and table, the primary reference is noted in the Ref_ID field. Auxiliary references are enumerated after attribute field values, and the corresponding short reference is in the Remarks field. For example, the Commodity field shows “copper; cobalt (1)”. This indicates the commodity “copper” was derived from the primary reference denoted in the Ref_ID field as “Cullen (2016)” and “cobalt” was derived from a secondary reference denoted in the Remarks field as “(1) Bookstrom and others (2016)”.
+
+There is no relevance to the order of data presented in lists. For example, if the Commodity field shows “nickel; cobalt; copper”, that is the order in which those commodities were compiled by the authors, and does not represent the order of importance. Additionally, in the GeolMinOcc table, lists in different fields do not relate. For example, if the Commodity field shows “nickel; cobalt; copper”, the Value_Mat field may list related ore minerals in a different order. Similarly, the data lists reflect the order in which the information was compiled. Listed fields are present in the Site, Loc_Pt, and GeolMinOcc tables. 
+
+Attribute records that contain a "Null" value in the file geodatabase were checked for available data, and no data were found. Some fields have "Null" values if the authors were unable to locate relevant published information. These blank fields are maintained in the database structure for consistency with related USGS products and for possible future use if information becomes available.
+
+Two points may occupy the same location. This occurs when there is a deposit with a mine and the location of either the mine or the deposit is unknown. For example, a report provides a map showing the location of a deposit. The report also provides production data for underground “Mine X” that is mining the deposit, but does not provide the location of “Mine X”. In this case, a second point representing “Mine X” is placed at the point location of the deposit.
+
+Polygon features may overlap. Viewing polygons as outlines without color fill will show where polygon overlap occurs.
+
+In the attribute section of this metadata, attribute fields from all tables and feature classes are listed in alphabetic order; corresponding feature classes and tables are listed in parentheses after the field name in the "Attribute_Label". For example, “Mat_Amnt (Production, Resources)” indicates the attribute field Mat_Amnt (material amount) occurs in the Production table and in the Resources table.</supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>1908</begdate>
+          <enddate>2018</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-168.1665</westbc>
+        <eastbc>-66.9810</eastbc>
+        <northbc>69.5298</northbc>
+        <southbc>18.1134</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>geoscientificInformation</themekey>
+        <themekey>location</themekey>
+      </theme>
+      <theme>
+        <themekt>Alexandria Digital Library Feature Type Thesaurus</themekt>
+        <themekey>mineral deposit areas</themekey>
+        <themekey>mine sites</themekey>
+      </theme>
+      <theme>
+        <themekt>USGS Thesaurus</themekt>
+        <themekey>mineral deposits</themekey>
+        <themekey>mineral resources</themekey>
+        <themekey>economic geology</themekey>
+        <themekey>geospatial datasets</themekey>
+        <themekey>natural resource exploration</themekey>
+        <themekey>geographic information systems</themekey>
+        <themekey>copper</themekey>
+        <themekey>nickel</themekey>
+        <themekey>platinum</themekey>
+        <themekey>palladium</themekey>
+        <themekey>gold</themekey>
+        <themekey>cobalt</themekey>
+        <themekey>silver</themekey>
+        <themekey>iron</themekey>
+        <themekey>lead</themekey>
+        <themekey>zinc</themekey>
+        <themekey>sulfur</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>Geology, Geophysics, and Geochemistry Science Center</themekey>
+        <themekey>GGGSC</themekey>
+        <themekey>Mineral Resources Program</themekey>
+        <themekey>MRP</themekey>
+        <themekey>U.S. Geological Survey</themekey>
+        <themekey>USGS</themekey>
+        <themekey>USGS Mineral Deposit Database</themekey>
+        <themekey>Bureau of Land Management</themekey>
+        <themekey>BLM</themekey>
+        <themekey>critical mineral</themekey>
+        <themekey>mineral deposit type</themekey>
+        <themekey>mineral commodity</themekey>
+        <themekey>mineral occurrence</themekey>
+        <themekey>mine</themekey>
+        <themekey>open pit mine</themekey>
+        <themekey>underground workings</themekey>
+        <themekey>surface workings</themekey>
+        <themekey>barite</themekey>
+        <themekey>net smelter return (NSR)</themekey>
+      </theme>
+      <theme>
+        <themekt>USGS Metadata Identifier</themekt>
+        <themekey>USGS:5ad623f2e4b0e2c2dd23f09e</themekey>
+      </theme>
+      <place>
+        <placekt>Geographic Names Information System (GNIS)</placekt>
+        <placekey>Alaska</placekey>
+        <placekey>California</placekey>
+        <placekey>Idaho</placekey>
+        <placekey>Maine</placekey>
+        <placekey>Michigan</placekey>
+        <placekey>Minnesota</placekey>
+        <placekey>Missouri</placekey>
+        <placekey>Montana</placekey>
+        <placekey>North Carolina</placekey>
+        <placekey>New Mexico</placekey>
+        <placekey>Oregon</placekey>
+        <placekey>Pennsylvania</placekey>
+        <placekey>Puerto Rico</placekey>
+        <placekey>Tennessee</placekey>
+      </place>
+      <place>
+        <placekt>Common geographic areas</placekt>
+        <placekey>United States</placekey>
+      </place>
+    </keywords>
+    <accconst>None. Please see 'Distribution Info' for details.</accconst>
+    <useconst>There is no guarantee concerning the accuracy of the data. Any user who modifies the data is obligated to describe the types of modifications they perform. Data have been checked to ensure the accuracy. If any errors are detected, please notify the originating office. The U.S. Geological Survey strongly recommends that careful attention be paid to the metadata file associated with these data. Acknowledgment of the U.S. Geological Survey would be appreciated in products derived from these data. User specifically agrees not to misrepresent the data, nor to imply that changes made were approved or endorsed by the U.S. Geological Survey. Please refer to https://www2.usgs.gov/laws/privacy.html for the USGS disclaimer.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Jeffrey L Mauk</cntper>
+          <cntorg>U.S. Geological Survey, Southwest Region</cntorg>
+        </cntperp>
+        <cntpos>Research Geologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <address>Mail Stop 973, W 6th Ave Kipling St</address>
+          <city>Lakewood</city>
+          <state>CO</state>
+          <postal>80225</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>303-236-5605</cntvoice>
+        <cntfax>303-236-3200</cntfax>
+        <cntemail>jmauk@usgs.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>The data sets were developed by the U.S. Geological Survey Geology, Geophysics, and Geochemistry Science Center (GGGSC) with support from the Bureau of Land Management Solid Minerals Program. Database reviews and contributions were made by USGS personnel Mike Zientek, Kim Shedd, Karen Lund, and Garth Graham.</datacred>
+    <native>Environment as of Metadata Creation: Microsoft [Unknown] Version 6.2 (Build 9200); Esri ArcGIS 10.5.1 (Build 7333) Service Pack N/A (Build N/A)</native>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Unique values in attribute fields were checked through frequency analyses. The unique values in each attribute field were reviewed and checked for spelling, consistency of terms, accuracy, adherence to established vocabularies, and completeness. Values calculated by USGS authors were reviewed and verified.
+
+When converting from an ArcGIS file geodatabase attribute table to Excel, precision of numeric values may change. The values from the ArcGIS file geodatabase are accurate and should be used for any calculations or analyses.</attraccr>
+    </attracc>
+    <logic>The locations of mines, mineral occurrences (which includes deposits and prospects), and mineral regions are represented as points, and some of these point locations have corresponding “footprints” or polygonal outlines. The polygonal footprint may represent the approximate outline of a mineral occurrence or mineral region. The exceptions are areas disturbed by mining-related activity, or surface workings, which are derived from imagery rather than published reports. Surface working outlines have no corresponding point location, nor do they have links to other tables.  
+
+Polygonal outlines, except for surface workings, may overlap. Overlapping surface workings are merged into a single outline. Surface workings do not distinguish different types of mine features, such as pits, tailings piles, dumps, etc.  
+
+Two points may occupy the same location. This occurs when there is a deposit with a mine, and the location of either the mine or the deposit is unknown. For example, a report provides a map showing the location of a deposit. The report also provides production data for underground “Mine X” that is mining the deposit, but does not provide the location of “Mine X”. In this case, a second point representing “Mine X” is placed at the point location of the deposit.</logic>
+    <complete>Mine, mineral occurrence, and mineral region geospatial and attribute data were compiled for the United States and its territories. Data were limited to publicly available sources for the time period between 1908 and 2018. Common literature sources include government and private industry annual reports, NI 43-101 reports, journal articles, company websites, and USGS publications. To more completely populate the Production and Resources tables, select values were calculated by USGS authors and are indicated by “111” as a decimal trailer.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>Locations of features were compiled from published coordinates and by digitizing from georeferenced raster images of maps or imagery. The locational accuracy of features is dependent on the accuracy of the source maps, which generally ranged in map scale from 1:10,000 to 1:1,000,000. The scale of the source maps was recorded as “Large” for 1:24,000 scale or larger, “Medium” for maps scales between 1:24,000 and 250,000; and “Small” for scales smaller than 1:250,000, in the Loc_Scale field.</horizpar>
+      </horizpa>
+      <vertacc>
+        <vertaccr>Vertical accuracy in the data set is not applicable.</vertaccr>
+      </vertacc>
+    </posacc>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Canadian Institute of Mining, Metallurgy and Petroleum</origin>
+            <pubdate>2014</pubdate>
+            <title>CIM Definition Standards for Mineral Resources and Mineral Reserves</title>
+            <geoform>Other</geoform>
+            <pubinfo>
+              <pubplace>CIM Website</pubplace>
+              <publish>Canadian Institute of Mining, Metallurgy and Petroleum</publish>
+            </pubinfo>
+            <onlink>http://web.cim.org/standards/MenuPage.cfm?sections=177&amp;menu=178</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy Resources</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>2014</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>CIM (2014)</srccitea>
+        <srccontr>Reference used by the authors to develop standardized vocabularies for the database and attribute tables. The use of this reference is denoted as CIM (2014) in this metadata.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>American Geological Institute</origin>
+            <pubdate>1997</pubdate>
+            <title>Dictionary of Mining, Mineral, and Related Terms, Second Edition</title>
+            <geoform>Publication (Book)</geoform>
+            <pubinfo>
+              <pubplace>Virginia</pubplace>
+              <publish>American Geological Institute</publish>
+            </pubinfo>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy Resources</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>1997</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>AGI (1997)</srccitea>
+        <srccontr>Reference used by the authors to develop standardized vocabularies for the database and attribute tables. The use of this reference is denoted as AGI (1997) in this metadata.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>American Geological Institute</origin>
+            <pubdate>2011</pubdate>
+            <title>Glossary of Geology, Fifth Edition, Revised</title>
+            <geoform>Publication (Book)</geoform>
+            <pubinfo>
+              <pubplace>Virginia</pubplace>
+              <publish>American Geological Institute</publish>
+            </pubinfo>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy Resources</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>2011</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>AGI (2011)</srccitea>
+        <srccontr>Reference used by the authors to develop standardized vocabularies for the database and attribute tables. The use of this reference is denoted as AGI (2011) in this metadata.</srccontr>
+      </srcinfo>
+      <procstep>
+        <procdesc>A literature search of publicly available mineral resource information was conducted for cobalt occurrences in the United States and its territories. Priority was given to identifying existing databases or compilations with high quality locations and data attributes that could be utilized directly in a geographic information system (GIS). The literature search identified sources of data on active mines, mineral occurrences, mineral regions, and resource and production data. Relevant information was acquired, reviewed for quality and geospatial information, and prioritized for digital data capture. 
+
+Mines described in published reports were captured as point locations and attributed to show mining activity in the History table and mine production in the Production table. Where possible, the approximate extent of the mining operation area was captured from imagery and presented in the surface workings layer (see Loc_Poly_Sw). Surface workings were digitized if the ground disturbance was at least 1,000 feet (300 meters) in one dimension. The outlines of adjacent surface workings were merged if they were within 500 feet (150 meters) of one another. 
+
+Mineral occurrences, defined as a concentration of a mineral considered potentially valuable, were compiled and attributed as deposits and prospects. Mineral deposits have defined size and grade indicated by current and (or) past production, and (or) a resource estimate; prospects have sufficient data to describe at least two dimensions and the presence of useful or valuable minerals or materials. Mineral occurrences were represented as points and also as polygons if the aerial extent or “footprint” of a prospect or deposit was available. Each polygon was attributed to describe the reported boundary type, such as the extent of the estimated resource, the grade limit or grade-thickness, or the limit of mineralization. The footprints of mineral deposits and prospects overlapped in some areas.
+
+Production and resource information is compiled as reported and consequently shows variable units. USGS authors make every attempt to provide material amount, grade, and contained commodity data. If two of the three values are reported, the missing value is calculated by the USGS authors. These values are denoted by “111” as a decimal trailer. For consistency, the three fields are converted to SI units by the USGS authors, and contained material is reported as metric tons for all commodities. Converted values are reported in fields denoted by “SI” in the field name.
+
+In some instances, the cutoff grade of the primary commodity determines the cutoff grade of coproducts. For example, the Johnny Lee lower zone of the Black Butte copper deposit in Montana has a reported cutoff grade of 1.5 percent Cu. The grades of the byproducts Co, Au, and Ag are variable. The cutoff grade for all commodities is reported as “1.5 percent copper”.
+
+The contained SI commodity field may have materials that occur within the valuable materials that are converted to elemental form. An example: chromium trioxide (CrO3), this field will have Cr (chromium) populated. The commodity in this field will reflect the value of the CntSIComAm and the unit that is in the CntSIComUt fields.
+
+Mining districts were digitized as shown in the source reports, and thus may be represented as points or polygons. Mining districts represent historic administrative areas organized by miners under the mining laws of the United States. Mining districts are typically an area containing a group of mines that exploited the same or related commodity. Mining district polygons overlapped in some areas.
+
+All data were spatially integrated using ArcGIS. All attribute data were compiled from publicly available sources published between 1908 and 2018. Standardized vocabularies were developed by USGS authors and include definitions from CIM (2014), AGI (1997), and AGI (2011). Data were checked throughout the compilation process for accuracy of locations; and completeness, accuracy, and consistency of attributes.</procdesc>
+        <procdate>2018</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>Entity point</sdtstype>
+        <ptvctcnt>75</ptvctcnt>
+      </sdtsterm>
+      <sdtsterm>
+        <sdtstype>G-polygon</sdtstype>
+        <ptvctcnt>54</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>0.0000001</latres>
+        <longres>0.0000001</longres>
+        <geogunit>Decimal degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>D_WGS_1984</horizdn>
+        <ellips>WGS_1984</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257223563</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>Attribute Fields</enttypl>
+        <enttypd>Fields containing attribute information associated with the data set.  Attribute fields occur in data layer(s) noted in parentheses.</enttypd>
+        <enttypds>Producer defined</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>Alteration (GeolMinOcc)</attrlabl>
+        <attrdef>Alteration associated with the mineralization in the mineral occurrence.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values may include silicification, potassic, chloritization, etc.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Approx_Lat (Site)</attrlabl>
+        <attrdef>Approximate latitude (WGS84) of the approximate center of the site area.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>18.136</rdommin>
+            <rdommax>67.138</rdommax>
+            <attrunit>decimal degrees</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Approx_Lon (Site)</attrlabl>
+        <attrdef>Approximate longitude (WGS84) of the approximate center of the site area.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>-156.944</rdommin>
+            <rdommax>-66.986</rdommax>
+            <attrunit>decimal degrees</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Assoc_Dep (Production)</attrlabl>
+        <attrdef>Deposit(s) associated with the production.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Ftr_ID(s) for deposits from which production occurred.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Assoc_Mat (GeolMinOcc)</attrlabl>
+        <attrdef>Associated materials occurring with the valuable material(s).</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>A list of materials that occur with the valuable materials, but are not considered ore or valuable. Same as gangue for metallic mineral deposits.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>CntSICom (Production, Resources)</attrlabl>
+        <attrdef>Contained commodity reported by the source, converted to its elemental form.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Materials that occur with the valuable materials converted to its elemental form. An example: chromium trioxide (CrO3), this field will have Cr (chromium) populated. This will reflect the number that is in the CntSIComAm and the unit that is in the CntSIComUt fields.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>CntSIComAm (Production, Resources)</attrlabl>
+        <attrdef>Contained commodity amount reported by the source, converted to the International System of Units (SI units). The minimum and maximum values listed below are from the field in the Resource table. The minimum and maximum values in the Production table 0.03 – 36,000,000. Contained Commodity Amount units vary by commodity and deposit, and are listed in the field CntSIComUt.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.008</rdommin>
+            <rdommax>8,720,000</rdommax>
+            <attrunit>See CntSIComUt.</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>CntSIComUt (Production, Resources)</attrlabl>
+        <attrdef>Contained commodity amount unit reported by the source, converted to the International System of Units (SI units). Contained commodity amount units are calculated to metric tons. These reflect the values listed in the field CntSIComAm</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values include metric tons.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>COG_SI (Production, Resources)</attrlabl>
+        <attrdef>Cut-off grade (CutOffGrad) reported by the source, converted to International System of Units (SI). The minimum and maximum values are for resources; no cut-off grade information was available for production values. Cut-off grade units vary by commodity and deposit, and are listed in the field COU_SI.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.2</rdommin>
+            <rdommax>145</rdommax>
+            <attrunit>See COU_SI.</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Commodity (GeolMinOcc, Loc_Pt, Site)</attrlabl>
+        <attrdef>Commodity(s) present or associated with the feature.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Commodity(s) reported for a mine, mineral occurrence, mineral region, or estimated resource and production.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Cont_Units (Production, Resources)</attrlabl>
+        <attrdef>The units of weight reported for the contained commodity.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values may include tons, pounds, ounces, etc.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Contained (Production, Resources)</attrlabl>
+        <attrdef>The amount of contained commodity present in the ore. The minimum and maximum values listed below are from the Resource table. The values for this field in the Production table range from 1,000 – 550,000,000 with variable units.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>1</rdommin>
+            <rdommax>13,366,000,000</rdommax>
+            <attrunit>See Cont_Units.</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>COU_SI (Production, Resources)</attrlabl>
+        <attrdef>Reported resource or production cutoff grade units (CutOffUnit) converted to International System of Units (SI).</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values includes percent copper equivalent, percent copper, dollars per metric ton NSR.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>County (Loc_Pt, Loc_Poly_Sw)</attrlabl>
+        <attrdef>U.S. county name.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Name of the county where the feature is located. If the mine, mineral occurrence, or mineral region occurs in multiple counties, all county names are listed, separated by semicolons.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>CutOffGrad (Production, Resources)</attrlabl>
+        <attrdef>Reported resource or production cutoff grade. The minimum and maximum values listed below are for resources. The cutoff grade for production was not reported.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.2</rdommin>
+            <rdommax>160</rdommax>
+            <attrunit>See CutOffUnit.</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>CutOffUnit (Production, Resources)</attrlabl>
+        <attrdef>Reported resource or production cutoff grade units.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values include percent copper equivalent, dollars per ton NSR, etc.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Dep_Model (Site)</attrlabl>
+        <attrdef>Indicates whether the deposit(s) on the site has been classified in the Dep_Model table.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>No</edomv>
+            <edomvd>No data were found or recorded in the attribute table at time of compilation.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Yes</edomv>
+            <edomvd>Data have been recorded in the attribute table.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Descr (Descr_Sum)</attrlabl>
+        <attrdef>Provides a brief description of a feature identified by the Ftr_ID or Site_ID.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Description reported by the source reference.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Descr_Sum (Site)</attrlabl>
+        <attrdef>Indicates whether descriptions have been captured for the site in the Descr_Sum table.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>No</edomv>
+            <edomvd>No data were found or recorded in the attribute table at time of compilation.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Yes</edomv>
+            <edomvd>Data have been recorded in the attribute table.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Descr_Type (Descr_Sum)</attrlabl>
+        <attrdef>Indicates the topic of the description.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values may include Geology, History, Mine, Production, Resources, and Site.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>DpMd_NoNm (Dep_Model)</attrlabl>
+        <attrdef>Deposit model number and (or) name.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>The deposit model classification assigned to a deposit.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>DpMd_RefID (Dep_Model)</attrlabl>
+        <attrdef>The deposit model classification reference.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>The short reference, or Ref_ID, of the source report that provides geologic descriptions that help classify the mineral deposit model.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Ftr_Group (Loc_Pt)</attrlabl>
+        <attrdef>A group to which a feature belongs, such as mine feature, mineral occurrence, or mineral region.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Mine Feature</edomv>
+            <edomvd>A man-made entity associated with the process of extracting, processing, or concentrating ore materials. The corresponding feature types (Ftr_Type) are Mine Shaft, Open Pit Mine, Portal Mine, and Underground Workings.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Mineral Occurrence</edomv>
+            <edomvd>Concentration of useful minerals or materials in sufficient quantity that it has been (or might be) exploited. The corresponding feature types (Ftr_Type) are Deposit or Prospect.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Mineral Region</edomv>
+            <edomvd>An area defined by a grouping of mines or mineral deposits or a geological environment permissive for mineral deposits. The corresponding feature type (Ftr_Type) is Mining District.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Ftr_ID (Dep_Model, Descr_Sum, GeolMinOcc, History, Loc_Poly, Loc_Poly_Sw, Loc_Pt, Production, Resources)</attrlabl>
+        <attrdef>An identification assigned to a feature. A “-1111” value indicates that the record pertains to a group of related features. These features will have the same Site_ID but differing Ftr_IDs.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>The format of the identification pertains to the type of feature followed by a number. The format is Mo (for mineral occurrences), Mr (for mineral regions), or Mf (for mine features) followed by a 5-digit number, for example, “Mo00001”.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Ftr_Name (Dep_Model, GeolMinOcc, History, Loc_Poly, Loc_Poly_Sw, Loc_Pt, Production, Resources)</attrlabl>
+        <attrdef>Published name of a database feature.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Current (preferred) form of the name of the mine, mineral occurrence, or mineral region.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Ftr_Type (GeolMinOcc, Loc_Pt)</attrlabl>
+        <attrdef>Type of mine, mineral occurrence, or mineral region feature.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Deposit</edomv>
+            <edomvd>A mineral occurrence with grade and size as determined by a reserve, or a resource estimate, or by production history.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Mine Shaft</edomv>
+            <edomvd>A vertical or inclined excavation through which a mine is worked.</edomvd>
+            <edomvds>AGI (2011)</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Mining District</edomv>
+            <edomvd>A section of country usually designated by name, having described or understood boundaries within which minerals are found and worked under rules and regulations prescribed by the miners therein. There is no limit to its territorial extent and its boundaries may be changed if vested rights are not thereby interfered with.</edomvd>
+            <edomvds>AGI (1997)</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Open Pit Mine</edomv>
+            <edomvd>Surficial mine, in which the valuable rock is exposed by removal of overburden.</edomvd>
+            <edomvds>AGI (2011)</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Portal Mine</edomv>
+            <edomvd>A mine in which the main entry or access is by means of the mouth of an adit or tunnel.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Prospect</edomv>
+            <edomvd>A mineral occurrence that has at least two dimensions (area) and evidence that useful minerals or materials are present, as indicated by analyses or the presence of valuable minerals.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Underground Workings</edomv>
+            <edomvd>A mine feature that is specified by the data source as 'underground workings', or a group of underground mine features such as drifts, stopes, winzes, levels, etc. These features are projected to the surface.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>GEM_Name (Dep_Model)</attrlabl>
+        <attrdef>Associated geoenvironmental model(s).</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Geoenvironmental models are derived from the deposit model classifying the deposit.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>GEM_RefID (Dep_Model)</attrlabl>
+        <attrdef>The geoenvironmental model classification reference.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Short reference, or Ref_ID, of the source report that contains the information used to select the appropriate geoenvironmental model for a mineral occurrence.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>GeolMinOcc (Site)</attrlabl>
+        <attrdef>Indicates whether data have been captured in the GeolMinOcc table for the mineral occurrence(s) on the site.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>No</edomv>
+            <edomvd>No data were found or recorded in the attribute table at time of compilation.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Yes</edomv>
+            <edomvd>Data have been recorded in the attribute table.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Grade (Production, Resources)</attrlabl>
+        <attrdef>The reported numerical grade of the deposit. The minimum and maximum values listed below are from the Grade field in the Resources table. The minimum and maximum values in the Production table range from 0.025 – 40 with variable units.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.006</rdommin>
+            <rdommax>268</rdommax>
+            <attrunit>See Grade_Unit.</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Grade_Unit (Production, Resources)</attrlabl>
+        <attrdef>The units of the reported numerical grade.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values may include percent, grams per tonne, parts per million, etc.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>GradeSI (Production, Resources)</attrlabl>
+        <attrdef>The reported numerical grade (Grade) converted to International System of Units (SI). The minimum and maximum values listed below are from the GradeSI field in the Resources table. The minimum and maximum values in the Production table range from 0.025 – 40 with variable units.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.006</rdommin>
+            <rdommax>268</rdommax>
+            <attrunit>See GradUnitSI.</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>GradUnitSI (Production, Resources)</attrlabl>
+        <attrdef>The units of the reported grade (Grade_Unit) converted to International System of Units (SI).</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values may include grams per metric ton, percent, etc.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>History (Site)</attrlabl>
+        <attrdef>Indicates whether history data for the site have been captured in the History table.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>No</edomv>
+            <edomvd>No data were found or recorded in the attribute table at time of compilation.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Yes</edomv>
+            <edomvd>Data have been recorded in the attribute table.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Host_Age (GeolMinOcc)</attrlabl>
+        <attrdef>The age of the lithological unit(s) that host, that are in direct contact with, or cut across the mineral occurrence (Host_Litho).</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Age is recorded as it was stated in the source, this age may be reported as numeric values or chronostratigraphic units.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Host_Litho (GeolMinOcc)</attrlabl>
+        <attrdef>The lithological unit(s) that host, that are in direct contact with, or cut across the mineral occurrence.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values may include siltite, granite, shale, etc.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Host_Name (GeolMinOcc)</attrlabl>
+        <attrdef>The formal name of lithological units that host the mineral occurrence.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Descriptive text, not abbreviated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Last_Updt (Dep_Model, Descr_Sum, GeolMinOcc, History, Loc_Poly, Loc_Poly_Sw, Loc_Pt, Production, References, Resources)</attrlabl>
+        <attrdef>The date that the record was last updated or revised by the USGS authors.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Format is YYYY-MM-DD.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Lat_WGS84 (Loc_Pt)</attrlabl>
+        <attrdef>Latitude of the point location in decimal degrees (WGS84). The Pt_Def field indicates the type of location.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>18.136</rdommin>
+            <rdommax>67.138</rdommax>
+            <attrunit>decimal degrees</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Loc_Date (Loc_Poly_Sw, Loc_Pt)</attrlabl>
+        <attrdef>The publication year of the map used to obtain the feature location.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>The year may differ from the publication date of the reference (identified by the Ref_ID). For example, the explanation for a location figure in a report states “Map from 2002”. The reference was published in 2003. In this case, “2002” is recorded in Loc_Date.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Loc_Poly (Loc_Pt, Site)</attrlabl>
+        <attrdef>Indicates whether a polygon location(s) has been digitized for corresponding point locations.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>No</edomv>
+            <edomvd>No data were found or recorded in the attribute table at time of compilation.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Yes</edomv>
+            <edomvd>Data have been recorded in the attribute table.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Loc_Pt (Site)</attrlabl>
+        <attrdef>Indicates whether the point location(s) has been captured for features on the site.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Yes</edomv>
+            <edomvd>Data have been recorded in the attribute table.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Loc_Scale (Loc_Pt)</attrlabl>
+        <attrdef>Defines the accuracy of the location as Large, Medium, or Small depending on the scale of the map that the location was captured from.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Small (less than 1:250,000)</edomv>
+            <edomvd>The representative fraction scale of the source map is 1:250,000 or smaller.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Medium (1:24,000-1:250,000)</edomv>
+            <edomvd>The representative fraction scale of the source map is between 1:24,000 and 1:250,000.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Large (greater than 1:24,000)</edomv>
+            <edomvd>The representative fraction scale of the source map is 1:24,000 or larger.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Long_WGS84 (Loc_Pt)</attrlabl>
+        <attrdef>Longitude of the point location in decimal degrees (WGS84). The Pt_Def field indicates the type of location.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>-156.945</rdommin>
+            <rdommax>-66.981</rdommax>
+            <attrunit>decimal degrees</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Mat_Amnt (Production, Resources)</attrlabl>
+        <attrdef>The reported amount of the material. The minimum and maximum values listed are from the Mat_Amnt field in the Resources table. The minimum and maximum values in the Production table range from 1,000 – 550,000,000 with variable units. Negative number values indicate that the amount value is listed for more than one commodity. For example, if the source says that there were 217,000 metric tons of ore containing 1 percent copper and 0.05 percent molybdenum, -217,000 would be entered in Mat_Amnt for each record (table row).</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>44,000</rdommin>
+            <rdommax>1,130,000,000</rdommax>
+            <attrunit>See Mat_Units.</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Mat_Type (Production, Resources)</attrlabl>
+        <attrdef>Type of material in the resource or reserve estimate, or type of material produced from the mine.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>commodity</edomv>
+            <edomvd>The final, valuable material that has been processed out of the ore material. The type of commodity is commonly represented in the final sales units such as ounces, pounds, etc.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>concentrate</edomv>
+            <edomvd>Enriched ore material collected after a removal of waste in a mill or concentrator. The rejected waste material is known as tailings.</edomvd>
+            <edomvds>AGI (2011)</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>ore</edomv>
+            <edomvd>The mixture of valuable materials along with gangue rocks and minerals. Ore is commonly represented in tons, metric tons, cubic yards, carloads, etc., and is usually associated with a grade(s) of valuable material(s) contained in a given amount of ore produced.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Mat_Units (Production, Resources)</attrlabl>
+        <attrdef>The units of the material amount reported.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values may include short tons, pounds, metric tons, etc.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>MatAmntSI (Production, Resources)</attrlabl>
+        <attrdef>The reported amount of the material (Mat_Amnt) converted to International System of Units (SI). The minimum and maximum values listed are from the MatAmntSI field in the Resources table. The minimum and maximum values in the Production table range from 1 – 90,700,000 with variable units. Negative number values indicate that the amount value is listed for more than one commodity. For example, if the source says that there were 217,000 metric tons of ore containing 1 percent copper and 0.05 percent molybdenum, -217,000 would be entered in Mat_Amnt for each record (table row).</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>44,000</rdommin>
+            <rdommax>1,030,000,000</rdommax>
+            <attrunit>See MatUnitsSI.</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Material (Production, Resources)</attrlabl>
+        <attrdef>The material reported in the production value or resource estimate.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values may include cobalt, copper, nickel, etc.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>MatUnitsSI (Production, Resources)</attrlabl>
+        <attrdef>The units of the material amount reported (Mat_Units) after conversion to International System of Units (SI).</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values may include metric tons or kilograms.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Min_Age (GeolMinOcc)</attrlabl>
+        <attrdef>Age of mineralization.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values may be numeric, descriptive text, or a combination.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Min_Style (GeolMinOcc)</attrlabl>
+        <attrdef>Describes how the valuable materials occur.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values may include veins, lenses, disseminated, etc.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>MinReg_ID (Site)</attrlabl>
+        <attrdef>Unique identification of a mineral region. MinReg_ID is the same as the Ftr_ID in the Loc_Pt table.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>In this database, mineral regions are mining districts that contain one or more mine or mineral occurrence features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Other_Name (Loc_Pt, Site)</attrlabl>
+        <attrdef>Other reported names of the mineral region, mineral occurrence, mine, or site.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Descriptive text, not abbreviated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Poly_Def (Loc_Pt)</attrlabl>
+        <attrdef>Type of polygonal boundary.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Definitions of polygons are typically derived from map legends or source descriptions, and may include outline of mining districts, ore body outline, etc.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Prod_USD (Production)</attrlabl>
+        <attrdef>Gross value of production from the mine in U.S. dollars. Dollar amounts are those at the time of the publication.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Value of production data were not found.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Production (Site)</attrlabl>
+        <attrdef>Indicates whether the production data for the mine(s) on the site have been recorded in the Production table.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>No</edomv>
+            <edomvd>No data were found or recorded in the attribute table at time of compilation.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Yes</edomv>
+            <edomvd>Data have been recorded in the attribute table.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Pt_Def (Loc_Pt)</attrlabl>
+        <attrdef>Point definition from source report or approximated by authors.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Points can be captured from a source report figure or map, or approximated by the authors to show a location of a mine (for example, center of pit). In cases where a mineral occurrence or mineral region boundary was available, the polygon was digitized and the point represents the approximate center of the polygon (centroid).</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Rcvry_Amt (Production)</attrlabl>
+        <attrdef>The amount of recovered material.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Recovery amount data were not found.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Rcvry_Unit (Production)</attrlabl>
+        <attrdef>Unit of weight of the recovered material.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Recovery amount data were not found.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>RcvryAmtSI (Production)</attrlabl>
+        <attrdef>The amount of recovered material (Rcvry_Amt) converted to International System of Units (SI).</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Recovery amount data were not found.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>RcvryUntSI (Production)</attrlabl>
+        <attrdef>Units of weight of the recovered material (Rcvry_Unit) converted to the International System of Units (SI).</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Recovery amount data were not found.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Ref_Detail (Dep_Model, History, Loc_Poly_Sw, Loc_Pt, Production, Resources)</attrlabl>
+        <attrdef>The figure, page, map, etc. number that the data were recorded from.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>If the data occurs in a table on a certain page, the table name or number and page number are captured, for example, “Page 10, Table 5".</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Ref_ID (Descr_Sum, GeolMinOcc, History, Loc_Poly_Sw, Loc_Pt, Production, References, Resources)</attrlabl>
+        <attrdef>Shortened reference identification of the source report.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Identification includes author name(s) and publication year.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Reference (References)</attrlabl>
+        <attrdef>Full reference of the source report.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>References are listed using USGS citation format.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Remarks (Dep_Model, Descr_Sum, GeolMinOcc, History, Loc_Poly, Loc_Poly_Sw, Loc_Pt, Production, Resources, Site)</attrlabl>
+        <attrdef>Additional author comments, remarks, or information about the feature or data.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Descriptive text, not abbreviated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Resources (Site)</attrlabl>
+        <attrdef>Indicates whether the resource or reserve estimates for the deposit(s) on the site have been captured in the Resources table.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>No</edomv>
+            <edomvd>No data were found or recorded in the attribute table at time of compilation.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Yes</edomv>
+            <edomvd>Data have been recorded in the attribute table.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Rsrc_Class (Resources)</attrlabl>
+        <attrdef>Indicates how the resource or reserve was classified in the source report.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Descriptive text, not abbreviated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Rsrc_Code (Resources)</attrlabl>
+        <attrdef>Standard classification system used to classify and report the estimate, such as CIM or SEC.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>CIM</edomv>
+            <edomvd>The CIM Definition Standards on Mineral Resources and Reserves (CIM Definition Standards) establish definitions and guidance on the definitions for mineral resources, mineral reserves, and mining studies used in Canada. The Mineral Resource, Mineral Reserve, and Mining Study definitions are incorporated, by reference, into National Instrument 43-101 Standards of Disclosure for Mineral Projects (NI 43-101). The CIM Definition Standards can be viewed on the CIM website at www.cim.org.</edomvd>
+            <edomvds>CIM (2014)</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Rsrc_Date (Resources)</attrlabl>
+        <attrdef>Year of the resource estimate. If the value is "Null", the date of the resource estimate is unknown and most likely does not equal the date of the resource source publication.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Format is YYYY.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Rsrc_Descr (Resources)</attrlabl>
+        <attrdef>Indicates how the resource or reserve was reported in the source report.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values may include Mineral Resource, Reserve, Ore Reserve, etc.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Site_ID (Dep_Model, Descr_Sum, GeolMinOcc, History, Loc_Poly, Loc_Pt, Production, Resources, Site)</attrlabl>
+        <attrdef>Unique identification assigned to a site.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Format is two-letter state abbreviation and a 5-digit number. For example, NV00001.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Site_Name (Site)</attrlabl>
+        <attrdef>Site name assigned by authors.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Mine and mineral occurrence features are grouped into sites based on geological characteristics or location.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>StatDetail (History)</attrlabl>
+        <attrdef>Status detail that pertains to the type of activity that occurred during a specified time period, as shown in the Year_From and Year_To fields.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Additional information about the Status field. Values may include Discovery, Evaluation, Exploration, Intermittent Exploration, etc.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>State (Loc_Poly_Sw, Loc_Pt)</attrlabl>
+        <attrdef>U.S. state name abbreviation.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>State name abbreviated using 2-letter codes.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Status (History)</attrlabl>
+        <attrdef>Activity that took place during a specified time period, as shown in the Year_From and Year_To fields.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Active</edomv>
+            <edomvd>Indicates a mine is in full-time or intermittent production, or is selling from stockpiles.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Development</edomv>
+            <edomvd>Indicates planning and studies are in progress or have been completed for the development of the mine, or that a mine is actively under development.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Discovery</edomv>
+            <edomvd>The actual finding of a valuable mineral, indicative of a deposit. Legally, a discovery is a prerequisite to making a mining claim on an area.</edomvd>
+            <edomvds>AGI (2011)</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Evaluation</edomv>
+            <edomvd>The fixing of an evaluation, not an appraisal. Used in preference of the word valuation, which is often confused with appraisal.</edomvd>
+            <edomvds>AGI (1997)</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Exploration</edomv>
+            <edomvd>The search for deposits of useful minerals or fossil fuels. It may include geologic reconnaissance, e.g. remote sensing, photogeology, geophysical and geochemical methods, and both surface and underground investigations. Establishing the nature of a known mineral deposit, preparatory to development. In the sense that exploration goes beyond discovery, it is a broader term than prospecting.</edomvd>
+            <edomvds>AGI (2011)</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Inactive</edomv>
+            <edomvd>Indicates that a mine is not in production, is on care and maintenance, or is under reclamation.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Intermittent Exploration</edomv>
+            <edomvd>The process of exploration that occurs at irregular intervals; not continuous or steady evaluation activity at the site.</edomvd>
+            <edomvds>USGS Authors</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Value_Mat (GeolMinOcc)</attrlabl>
+        <attrdef>Valuable materials (minerals or rocks) that comprise the valuable constituents of a deposit.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>Values may include chalcopyrite, cobaltite, pentlandite, etc.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Year_From (History, Production)</attrlabl>
+        <attrdef>First year of production or history. When mine production was intermittent, only the first and last year of reported production are shown.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>See Last_Updt (last updated) field for the currency of the values.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Year_To (History, Production)</attrlabl>
+        <attrdef>Last year of production or history. When mine production was intermittent, only the first and last year of reported production are shown.</attrdef>
+        <attrdefs>USGS Authors</attrdefs>
+        <attrdomv>
+          <udom>See Last_Updt (last updated) field for the currency of the values.</udom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <overview>
+      <eaover>The entity and attribute information provided describe the tabular data associated with the data set. Please review the detailed descriptions that are provided (the individual attribute descriptions) for information on the values that appear as fields/table entries of the data set.</eaover>
+      <eadetcit>The entity and attribute information was generated by the individual and (or) agency identified as the originator of the data set. Please review the rest of the metadata record for additional details and information.</eadetcit>
+    </overview>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>U.S. Geological Survey - ScienceBase</cntorg>
+          <cntper>USGS Information Services</cntper>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <address>Building 810, Mail Stop 302</address>
+          <city>Denver</city>
+          <state>CO</state>
+          <postal>80225</postal>
+          <country>United States of America</country>
+        </cntaddr>
+        <cntvoice>1-888-ASK-USGS (1-888-275-8747)</cntvoice>
+        <cntemail>sciencebase@usgs.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>This database, Cobalt Deposits in the United States (https://doi.org/10.5066/P9V74HIU) has been approved for data release by the U.S. Geological Survey (USGS). Although this database has been subjected to rigorous review and is substantially complete, the USGS reserves the right to revise the data pursuant to further analysis and review. Furthermore, it is released on condition that neither the USGS nor the U.S. Government may be held liable for any damages resulting from its authorized or unauthorized use. Although these data have been processed successfully on a computer system at the USGS, no warranty expressed or implied is made regarding the display or utility of the data on any other system, or for general or scientific purposes, nor shall the act of distribution constitute any such warranty. The USGS shall not be held liable for improper or incorrect use of the data described and (or) contained herein. Any use of trade, product, or firm names is for descriptive purposes only and does not imply endorsement by the U.S. Government. Although this information product, for the most part, is in the public domain, it also contains copyrighted materials as noted in the text. Permission to reproduce copyrighted items for other than personal use must be secured from the copyright owner.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>Digital Data</formname>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>https://doi.org/10.5066/P9V74HIU</networkr>
+              </networka>
+            </computer>
+          </onlinopt>
+        </digtopt>
+      </digform>
+      <fees>None. No fees are applicable for obtaining the data set.</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20200821</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Jeffrey L Mauk</cntper>
+          <cntorg>U.S. Geological Survey, Southwest Region</cntorg>
+        </cntperp>
+        <cntpos>Research Geologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <address>Mail Stop 973, W 6th Ave Kipling St</address>
+          <city>Lakewood</city>
+          <state>CO</state>
+          <postal>80225</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>303-236-5605</cntvoice>
+        <cntfax>303-236-3200</cntfax>
+        <cntemail>jmauk@usgs.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>
